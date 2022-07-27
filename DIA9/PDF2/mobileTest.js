@@ -1,0 +1,16 @@
+"use strict";
+exports.__esModule = true;
+var mobile_1 = require("./mobile");
+var Readmi = new mobile_1.Mobile("Redmi", "6", "Redmi", "4Gb", "Negro", false, 2, 150);
+var iPhone = new mobile_1.Mobile("iPhone", "3G", "Apple", "8GB", "Blanco", false, 1, 1000);
+var xiaomi = new mobile_1.Mobile("Xiaomi", "Pro 10", "Xiaomi", "64GB", "Blanco", true, 3, 250);
+console.log(Readmi);
+Readmi.printAll();
+console.log(iPhone);
+iPhone.printAll();
+console.log(xiaomi);
+xiaomi.printAll();
+Readmi.printAll();
+Readmi.printCarac();
+iPhone.printCarac();
+xiaomi.printCarac();
