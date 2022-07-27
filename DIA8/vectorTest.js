@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var vector_1 = require("./vector");
+var prueba = new vector_1.Vector(4, 20);
+prueba.print();
+var v1 = new vector_1.Vector(4, 20);
+var v2 = new vector_1.Vector(0, 0);
+v2 = prueba.add(v1);
+v2.print();
+var v3 = new vector_1.Vector(0, 0);
+v3 = prueba.subs(v1);
+v3.print();
+var v4 = new vector_1.Vector(0, 0);
+v4 = prueba.mult(v1);
+v4.print();
+var v5 = new vector_1.Vector(0, 0);
+v5 = prueba.multNumber(4);
+v5.print();

@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var reto4_1 = require("./reto4");
+var reto6_1 = require("./reto6");
+var libro1 = new reto4_1.Book("Introducción a Javascript", 233, "2344433-BC23333", "Joseph Smith", "Now Editions");
+var libro2 = new reto4_1.Book("Los pitufos", 233, "2344433-BC23333", "Pitufo escritor", "Now Editions");
+var biblioteca = new reto6_1.Library([libro1, libro2], "Mi casa", "Nose que poner");
+console.log(biblioteca);
+console.log(biblioteca.toString());
+console.log(biblioteca.getNumberOfBooks());
+console.log((biblioteca.findByAuthor("Joseph Smith")));
