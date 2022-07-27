@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var mobile_1 = require("../PDF2/mobile");
+var mobileLibrary_1 = require("./mobileLibrary");
+var Redmi = new mobile_1.Mobile("Redmi", "6", "Redmi", "4Gb", "Negro", false, 2, 150);
+var iPhone = new mobile_1.Mobile("iPhone", "3G", "Apple", "8GB", "Blanco", false, 1, 1000);
+var xiaomi = new mobile_1.Mobile("Xiaomi", "Pro 10", "Xiaomi", "64GB", "Blanco", true, 3, 250);
+var arrayNum = [];
+arrayNum.push(Redmi, iPhone, xiaomi);
+var libreria = new mobileLibrary_1.MobileLibrary("Libería 1", "Primero", arrayNum);
+libreria.printLibrary();
